@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:content="@id/image_view_2"
+        android:rotation="180"
+        android:handle="@id/image_view_1"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/image_view_1"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            android:rotation="180"/>
+
+        <ImageView
+            android:id="@+id/image_view_2"
+            android:layout_width="300sp"
+            android:layout_height="300sp"
+            android:src="@drawable/sample_image"/>
+
+    </SlidingDrawer>
+
+</RelativeLayout>
